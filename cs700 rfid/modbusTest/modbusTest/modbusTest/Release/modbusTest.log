@@ -1,0 +1,43 @@
+﻿生成启动时间为 2017/6/20 20:54:19。
+     1>项目“F:\2017\CS700\software_rf\modbusTest\modbusTest\modbusTest\modbusTest.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Release\modbusTest.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Release\modbusTest.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\modbusTest.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\modbusTest.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt modbus.cpp modbusTest.cpp modbusTestDlg.cpp m_string.cpp
+         modbus.cpp
+         modbusTest.cpp
+         modbusTestDlg.cpp
+     1>modbusTestDlg.cpp(886): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>modbusTestDlg.cpp(917): warning C4101: “count”: 未引用的局部变量
+     1>modbusTestDlg.cpp(918): warning C4101: “i”: 未引用的局部变量
+     1>modbusTestDlg.cpp(916): warning C4101: “nCurSel”: 未引用的局部变量
+     1>modbusTestDlg.cpp(915): warning C4101: “buf”: 未引用的局部变量
+     1>modbusTestDlg.cpp(1503): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>modbusTestDlg.cpp(1605): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         m_string.cpp
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IRelease\ /nologo /fo"Release\modbusTest.res" modbusTest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\2017\CS700\software_rf\modbusTest\modbusTest\Release\modbusTest.exe" /INCREMENTAL:NO /NOLOGO /MANIFEST /ManifestFile:"Release\modbusTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\2017\CS700\software_rf\modbusTest\modbusTest\Release\modbusTest.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\2017\CS700\software_rf\modbusTest\modbusTest\Release\modbusTest.lib" /MACHINE:X86 Release\modbusTest.res
+         Release\modbus.obj
+         Release\modbusTest.obj
+         Release\modbusTestDlg.obj
+         Release\m_string.obj
+         Release\stdafx.obj
+         正在生成代码
+         已完成代码的生成
+         modbusTest.vcxproj -> F:\2017\CS700\software_rf\modbusTest\modbusTest\Release\modbusTest.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\2017\CS700\software_rf\modbusTest\modbusTest\Release\modbusTest.exe;#1" /manifest Release\modbusTest.exe.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Release\modbusTest.unsuccessfulbuild”。
+         正在对“Release\modbusTest.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\2017\CS700\software_rf\modbusTest\modbusTest\modbusTest\modbusTest.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.87

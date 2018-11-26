@@ -1,0 +1,26 @@
+ build/default/production/src/nfc/apl/mfrc522_apl.d  \
+ build/default/production/src/nfc/apl/mfrc522_apl.p1:  \
+ src/nfc/apl/mfrc522_apl.c  \
+src/nfc/apl/../../soc/soc.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/mcc.h  \
+src/nfc/apl/.././apl/mfrc522_apl.h  \
+src/nfc/apl/.././bal/../../soc/soc.h  \
+src/nfc/apl/.././pal/mfrc522_picc.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/eusart1.h  \
+src/nfc/apl/.././hal/mfrc522_hal.h  \
+src/nfc/apl/.././bal/mfrc522_bal_def_default.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/memory.h  \
+src/nfc/apl/../mfrc522_includes.h  \
+src/nfc/apl/.././bal/mfrc522_bal.h  \
+src/nfc/apl/.././hal/mfrc522_hal_def.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/interrupt_manager.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/tmr0.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/tmr1.h  \
+src/nfc/apl/../../depend/delay.h  \
+src/nfc/apl/../../soc/../../mcc_generated_files/pin_manager.h  \
+src/nfc/apl/.././pal/mfrc522_mifare.h  \
+src/nfc/apl/../../depend/depend.h  \
+src/nfc/apl/../mfrc522_config.h  \
+src/nfc/apl/../../depend/m_string.h  \
+src/nfc/apl/.././pal/mfrc522_picc_low.h  \
+src/nfc/apl/../../depend/xxtea.h 

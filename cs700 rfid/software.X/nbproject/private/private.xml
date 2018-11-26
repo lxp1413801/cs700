@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/appdata.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/flow.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/flow.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/configs/configs.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/main.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/driver/timer.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/driver/my_uart.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/mcc_generated_files/tmr0.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/appdata.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/api/ui.c</file>
+        </group>
+        <group name="cs600_test">
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/rfid_demo.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/main.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/driver/other-gpio.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/nfc/bal/mfrc522_bal.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/flow.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/driver/timer.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/api/ui_key.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/api/ui_key.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/api/ui.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/nfc/pal/mfrc522_picc.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/protocol/crc16_sf.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/driver/i2c.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/nfc/apl/mfrc522_apl.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/nfc/hal/mfrc522_hal.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/appdata.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/appdata.h</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/api/modbus.c</file>
+            <file>file:/F:/2017/CS700/software_rf/software.X/src/app/flow.h</file>
+        </group>
+    </open-files>
+</project-private>

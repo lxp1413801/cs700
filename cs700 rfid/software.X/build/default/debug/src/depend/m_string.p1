@@ -1,0 +1,157 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 38: typedef signed long int int32_t;
+[; ;stdint.h: 45: typedef unsigned char uint8_t;
+[; ;stdint.h: 51: typedef unsigned int uint16_t;
+[; ;stdint.h: 67: typedef unsigned long int uint32_t;
+[; ;stdint.h: 75: typedef signed char int_least8_t;
+[; ;stdint.h: 82: typedef signed int int_least16_t;
+[; ;stdint.h: 104: typedef signed long int int_least32_t;
+[; ;stdint.h: 111: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 117: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 136: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 145: typedef signed char int_fast8_t;
+[; ;stdint.h: 152: typedef signed int int_fast16_t;
+[; ;stdint.h: 174: typedef signed long int int_fast32_t;
+[; ;stdint.h: 181: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 187: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 206: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 212: typedef int32_t intmax_t;
+[; ;stdint.h: 217: typedef uint32_t uintmax_t;
+[; ;stdint.h: 222: typedef int16_t intptr_t;
+[; ;stdint.h: 227: typedef uint16_t uintptr_t;
+[; ;m_string.h: 7: extern void m_mem_set(uint8_t* buf,uint8_t x,uint8_t len);
+[; ;m_string.h: 8: extern void m_mem_cpy(uint8_t* d,uint8_t* s);
+[; ;m_string.h: 9: extern void m_mem_cpy_len(uint8_t* d,uint8_t* s,uint8_t len);
+[; ;m_string.h: 10: extern uint16_t m_str_match(uint8_t* b,uint8_t* c);
+[; ;m_string.h: 11: extern int32_t m_math_pow(int32_t x,uint8_t y);
+[; ;m_string.h: 12: extern uint16_t m_str_cmp(uint8_t* d,uint8_t* s);
+[; ;m_string.h: 13: extern uint16_t m_str_cmp_len(uint8_t* d,uint8_t* s,uint8_t len);
+[; ;m_string.h: 14: extern uint16_t HEX8(uint8_t* hex,uint8_t x);
+[; ;m_string.h: 15: extern uint16_t m_str_b2h(uint8_t* h,uint8_t* b,uint16_t len);
+[; ;m_string.h: 16: extern uint16_t m_str_h2b(uint8_t* b,uint8_t* h,uint16_t len);
+[; ;m_string.h: 19: extern void m_int_2_str(uint8_t* buf,int32_t x,uint8_t len);
+[; ;m_string.h: 20: extern uint8_t m_str_head_hide(uint8_t* str,uint8_t loc);
+[; ;m_string.h: 22: extern const uint8_t Bcd2HexTable[];
+[; ;m_string.h: 28: extern uint32_t swap_uint32(uint32_t x);
+[; ;m_string.h: 29: extern uint16_t swap_uint16(uint16_t x);
+[; ;m_string.h: 33: extern void int32_array_shift_right(int32_t *p32,uint16_t eoc);
+"32 src/depend/m_string.c
+[v _m_mem_set `(v ~T0 @X0 1 ef3`*uc`uc`uc ]
+"33
+{
+[; ;m_string.c: 32: void m_mem_set(uint8_t* buf,uint8_t x,uint8_t len)
+[; ;m_string.c: 33: {
+[e :U _m_mem_set ]
+"32
+[v _buf `*uc ~T0 @X0 1 r1 ]
+[v _x `uc ~T0 @X0 1 r2 ]
+[v _len `uc ~T0 @X0 1 r3 ]
+"33
+[f ]
+[; ;m_string.c: 34: while(len--)
+"34
+[e $U 2  ]
+[e :U 3 ]
+[; ;m_string.c: 35: {
+"35
+{
+[; ;m_string.c: 36: *buf++=x;
+"36
+[e = *U ++ _buf * -> -> 1 `i `x -> -> # *U _buf `i `x _x ]
+"37
+}
+[e :U 2 ]
+"34
+[e $ != -> -- _len -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 3  ]
+[e :U 4 ]
+[; ;m_string.c: 37: }
+[; ;m_string.c: 38: }
+"38
+[e :UE 1 ]
+}
+"41
+[v _m_mem_cpy_len `(v ~T0 @X0 1 ef3`*uc`*uc`uc ]
+"42
+{
+[; ;m_string.c: 41: void m_mem_cpy_len(uint8_t* d,uint8_t* s,uint8_t len)
+[; ;m_string.c: 42: {
+[e :U _m_mem_cpy_len ]
+"41
+[v _d `*uc ~T0 @X0 1 r1 ]
+[v _s `*uc ~T0 @X0 1 r2 ]
+[v _len `uc ~T0 @X0 1 r3 ]
+"42
+[f ]
+[; ;m_string.c: 44: while(len)
+"44
+[e $U 6  ]
+[e :U 7 ]
+[; ;m_string.c: 45: {
+"45
+{
+[; ;m_string.c: 46: *d++=*s++;
+"46
+[e = *U ++ _d * -> -> 1 `i `x -> -> # *U _d `i `x *U ++ _s * -> -> 1 `i `x -> -> # *U _s `i `x ]
+[; ;m_string.c: 47: len--;
+"47
+[e -- _len -> -> 1 `i `uc ]
+"48
+}
+[e :U 6 ]
+"44
+[e $ != -> _len `i -> -> -> 0 `i `uc `i 7  ]
+[e :U 8 ]
+[; ;m_string.c: 48: }
+[; ;m_string.c: 49: }
+"49
+[e :UE 5 ]
+}
+"116
+[v _m_math_pow `(l ~T0 @X0 1 ef2`l`uc ]
+"117
+{
+[; ;m_string.c: 116: int32_t m_math_pow(int32_t x,uint8_t y)
+[; ;m_string.c: 117: {
+[e :U _m_math_pow ]
+"116
+[v _x `l ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+"117
+[f ]
+"118
+[v _ret `l ~T0 @X0 1 a ]
+[; ;m_string.c: 118: int32_t ret=1;
+[e = _ret -> -> 1 `i `l ]
+[; ;m_string.c: 119: if(y==0)return 1;
+"119
+[e $ ! == -> _y `i -> 0 `i 10  ]
+[e ) -> -> 1 `i `l ]
+[e $UE 9  ]
+[e :U 10 ]
+[; ;m_string.c: 120: while(y--)
+"120
+[e $U 11  ]
+[e :U 12 ]
+[; ;m_string.c: 121: {
+"121
+{
+[; ;m_string.c: 122: ret*=x;
+"122
+[e =* _ret _x ]
+"123
+}
+[e :U 11 ]
+"120
+[e $ != -> -- _y -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 12  ]
+[e :U 13 ]
+[; ;m_string.c: 123: }
+[; ;m_string.c: 124: return ret;
+"124
+[e ) _ret ]
+[e $UE 9  ]
+[; ;m_string.c: 125: }
+"125
+[e :UE 9 ]
+}
